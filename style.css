@@ -1,0 +1,183 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #807e7e;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.logo img {
+    height: 100px; /* Ajusta la altura del logo */
+    width: auto; /* Mantén proporciones */
+}
+
+.titulo-grande {
+    font-size: 4rem; /* Ajusta el tamaño a tu preferencia */
+    font-weight: bold; /* Opcional: Si quieres que el texto sea más grueso */
+    text-align: center; /* Opcional: Centra el texto */
+}
+
+p {
+    font-size: 1.5rem; /* Cambia a un tamaño deseado */
+    line-height: 1.8; /* Ajusta el espacio entre líneas para mejor legibilidad */
+}
+
+
+/* Barra de navegación */
+nav {
+    background-color: #769cba;
+    overflow: hidden;
+    display: flex; /* Alinear elementos en una línea */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Separar logo y enlaces */
+    padding: 10px 20px; /* Espaciado interno */
+    width: 100%; /* Asegura que la barra ocupe todo el ancho */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+nav ul li {
+    padding: 14px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    display: block;
+}
+
+/* Efecto de hover para los enlaces */
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#inicio {
+    /*background-color: #8c979a;*/
+    background-image: url('fondo.jpg'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta real */
+    background-size: cover; /* Hace que la imagen cubra toda el área del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Hace que la sección tenga el alto completo de la pantalla */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    color: white; /* Opcional: Asegúrate de que el texto sea legible */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo de la sección Nosotros */
+#nosotros {
+    display: flex; /* Activa flexbox */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten si la pantalla es pequeña */
+    justify-content: space-between; /* Espacio uniforme entre columnas */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Columna izquierda */
+.descripcion {
+    flex: 1; /* Ocupa el 50% del espacio disponible */
+    padding: 20px;
+    max-width: 50%; /* Asegura que no exceda el 50% */
+}
+
+/* Columna derecha */
+.mision-vision {
+    flex: 1; /* Ocupa el 50% del espacio disponible */
+    padding: 20px;
+    max-width: 50%; /* Asegura que no exceda el 50% */
+}
+
+/* Responsivo: Ajusta las columnas en pantallas pequeñas */
+@media (max-width: 768px) {
+    .descripcion, .mision-vision {
+        max-width: 100%; /* Ocupa el 100% del ancho */
+        flex: 100%; /* Se apilan una debajo de otra */
+    }
+}
+
+
+/* Sección Servicios */
+#servicios {
+    display: flex; /* Activa flexbox */
+    flex-wrap: wrap; /* Permite apilar elementos en pantallas pequeñas */
+    justify-content: space-between; /* Espacio uniforme entre columnas */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Columna de texto */
+.texto-servicios {
+    flex: 1; /* Ocupa el 50% del espacio disponible */
+    padding: 20px;
+    max-width: 50%;
+}
+
+/* Columna de imagen */
+.imagen-servicios {
+    flex: 1; /* Ocupa el 50% del espacio disponible */
+    padding: 20px;
+    max-width: 50%;
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+/* Imagen dentro de la columna */
+.imagen-servicios img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+}
+
+/* Responsivo: Ajusta las columnas en pantallas pequeñas */
+@media (max-width: 768px) {
+    .texto-servicios, .imagen-servicios {
+        max-width: 100%; /* Ocupa el 100% del ancho */
+        flex: 100%; /* Se apilan una debajo de otra */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+}
+
+#contacto {
+    background-color: white;
+}
+
+/* Estilo para el botón */
+.btn-descargar {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Cambios al pasar el ratón por el botón */
+.btn-descargar:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efecto de levantamiento */
+}
+
+/* Cambios al hacer clic */
+.btn-descargar:active {
+    transform: translateY(2px); /* Efecto de presión */
+}
+
