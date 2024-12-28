@@ -10,8 +10,12 @@
     <!-- Barra de navegación -->
     <nav>
         <ul>
+            
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -19,28 +23,90 @@
 
     <!-- Contenido de la página -->
     <section id="inicio">
-        <h1>Bienvenido a QuickWise</h1>
-        <p>Consultorías rápidas y efectivas para diversos sectores.</p>
+        <div class="container">
+            <h1 class="titulo-grande">Quick Wise</h1>
+            <p>QuickWise conecta tus preguntas con profesionales certificados en tiempo récord, para que tomes decisiones informadas y sin complicaciones.</p>
+            <div class="cta">
+                <a class="btn-descargar">Descargar App</a>
+            </div>
+        </div>
     </section>
 
     <section id="nosotros">
-        <h2>Nosotros</h2>
-        <p>Somos una empresa dedicada a ofrecer soluciones innovadoras.</p>
+        <!-- Columna izquierda -->
+        <div class="descripcion">
+            <h2>¿Quiénes somos?</h2>
+            <p>
+                QuickWise nació con la idea de simplificar el acceso a información profesional, 
+                rompiendo barreras de tiempo y espacio. Nuestro equipo está comprometido con 
+                brindar soluciones rápidas y confiables.
+            </p>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="mision-vision">
+            <h2>Misión</h2>
+            <p>
+                Facilitar el acceso a conocimiento especializado para que resuelvas tus dudas de forma rápida, simple y confiable.
+            </p>
+            <h2>Visión</h2>
+            <p>
+                Ser la plataforma líder en asesorías rápidas, conectando personas con los mejores expertos en todo momento.
+            </p>
+        </div>
     </section>
 
     <section id="servicios">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Consultoría empresarial</li>
-            <li>Consultoría tecnológica</li>
-            <li>Consultoría en salud</li>
-        </ul>
+        <!-- Columna izquierda (Texto) -->
+        <div class="texto-servicios">
+            <h2>Nuestros Servicios</h2>
+            <p>Encuentra expertos en una amplia variedad de temas:</p>
+            <ul>
+                <li><strong>Finanzas personales:</strong> Consejos sobre ahorro, inversión y presupuestos.</li>
+                <li><strong>Tecnología:</strong> Solución de dudas sobre dispositivos y software.</li>
+                <li><strong>Salud:</strong> Bienestar físico y mental.</li>
+                <li><strong>Educación:</strong> Apoyo en estudios, idiomas y formación profesional.</li>
+                <li><strong>Marketing y negocios:</strong> Estrategias para hacer crecer tu proyecto.</li>
+            </ul>
+
+            <p>Descarga nuestra app y revisa la amplia gama de expertos con los que contamos.</p>
+            <div class="cta">
+                <center>
+                <a class="btn-descargar">Descargar App</a>
+            </div>
+        </div>
+
+        <!-- Columna derecha (Imagen) -->
+        <div class="imagen-servicios">
+            <img src="servicio.jpg" alt="Servicios">
+        </div>
     </section>
 
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Contáctanos a través del correo: info@quickwise.com</p>
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna duda o comentario? Estamos aquí para ayudarte.</p>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Otras formas de contacto:</p>
+            <ul>
+                <li><strong>Correo:</strong> contacto@quickwise.com</li>
+                <li><strong>Teléfono:</strong> +123 456 789</li>
+                <li><strong>Instragram:</strong> @quick.wise</li>
+            </ul>
+        </div>
     </section>
+
+    <footer>
+        <center>
+        <p>QuickWise &copy; 2024. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
-
